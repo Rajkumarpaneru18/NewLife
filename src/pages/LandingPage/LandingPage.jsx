@@ -1,9 +1,9 @@
 import Feature from "../../components/LandingPage/Feature";
 import Footer from "../../components/LandingPage/Footer";
-import Header from "../../components/Header/Header";
-import Hero from "../../components/LandingPage/Hero";
+import Header from "../../components/Header/";
 import Testimonial from "../../components/LandingPage/Testimonial";
 import Layout from "../../layout/Layout";
+import Hero from "../../components/Hero";
 
 const LandingPage = () => {
   return (
