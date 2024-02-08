@@ -1,4 +1,4 @@
-import Feature from "../../components/LandingPage/Feature";
+import Feature from "../../components/Feature";
 import Footer from "../../components/LandingPage/Footer";
 import Header from "../../components/Header/";
 import Testimonial from "../../components/LandingPage/Testimonial";
