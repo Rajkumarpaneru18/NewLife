@@ -1,6 +1,5 @@
-import PregnantWoman from "../../assets/img/hero-preg-woman.png"
+import PregnantWoman from "../../assets/img/hero-preg-woman.png";
 const Hero = () => {
-
   return (
     <div className="my-10  flex justify-center items-center gap-20 flex-col">
       <div className="flex justify-between items-center gap-10">
@@ -16,11 +15,7 @@ const Hero = () => {
           <p className="text-xl text-white">for Your Better Health</p>
         </div>
         <div>
-          <img
-            src={PregnantWoman}
-            alt="mother"
-            className="aspect-auto w-80"
-          />
+          <img src={PregnantWoman} alt="mother" className="aspect-auto w-80" />
         </div>
       </div>
 
@@ -39,7 +34,7 @@ const Hero = () => {
               </span>
             </span>
           </div>
-          <div className="text-gray-50 text-sm  text-center w-1/2 flex justify-center items-center">
+          <div className="text-gray-200 text-sm  text-center w-1/2 flex justify-center items-center">
             Embark on a beautiful journey filled with joy and anticipation. As
             you become the guiding star of your own child, embrace the physical
             and emotional changes with love and excitement.

@@ -19,7 +19,7 @@ const Header = () => {
       </ul>
 
       {/* Get Started button */}
-      <button className="bg-indigo-700 text-white  text-lg px-3 py-2 rounded-2xl hover:bg-indigo-950">Get Started</button>
+      <button className="bg-indigo-700 text-white  text-xl px-3 py-2 rounded-2xl hover:bg-purple-950">Get Started</button>
     </header>
   );
 };
