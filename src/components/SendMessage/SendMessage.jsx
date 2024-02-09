@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const SendMessage = ({ message, sendMessage, setMessage }) => {
   return (
-    <div className="flex justify-between items-center px-4 py-3  border-t border-gray-600 bg-black min-h-[10vh]">
+    <div className="flex justify-between items-center px-4 py-3  border-t border-gray-600 bg-transparent min-h-[10vh]">
       <form className="flex-grow mx-4">
         <input
           className="w-full p-3 text-base text-white placeholder-gray-500 bg-gray-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:border-transparent resize-none"
