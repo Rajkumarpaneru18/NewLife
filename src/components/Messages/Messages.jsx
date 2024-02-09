@@ -1,6 +1,7 @@
 import { FaUser, FaRobot } from "react-icons/fa";
+import PropTypes from "prop-types";
 
-const Chat = ({ messages }) => {
+const Messages = ({ messages }) => {
   if (messages.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center h-[60vh] min-h-[90vh]">
@@ -40,4 +41,8 @@ const Chat = ({ messages }) => {
   );
 };
 
-export default Chat;
+Messages.propTypes = {
+  messages: PropTypes.arrayOf(PropTypes.object),
+};
+
+export default Messages;

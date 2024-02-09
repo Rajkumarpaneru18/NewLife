@@ -1,4 +1,5 @@
 import { IoSend } from "react-icons/io5";
+import PropTypes from "prop-types";
 
 const SendMessage = ({ message, sendMessage, setMessage }) => {
   return (
@@ -13,9 +14,7 @@ const SendMessage = ({ message, sendMessage, setMessage }) => {
       </form>
       <button
         onClick={() => {
-          console.log("Message send");
-          setMessage("");
-          sendMessage(message);
+          sendMessage();
         }}
         className="p-3 bg-indigo-500 rounded-full text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-150 ease-in-out"
       >
@@ -23,6 +22,12 @@ const SendMessage = ({ message, sendMessage, setMessage }) => {
       </button>
     </div>
   );
+};
+
+SendMessage.propTypes = {
+  message: PropTypes.string,
+  sendMessage: PropTypes.func,
+  setMessage: PropTypes.func,
 };
 
 export default SendMessage;

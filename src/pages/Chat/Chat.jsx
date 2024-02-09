@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Messages from "../../components/Messages";
 import SendMessage from "../../components/SendMessage";
@@ -12,7 +12,7 @@ const Chat = () => {
     setMessages((prevMessages) => [...prevMessages, { text, sender }]);
   };
 
-  const sendMessage = (text) => {
+  const sendMessage = () => {
     const userMessage = {
       username: "User",
       message: message,
