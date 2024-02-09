@@ -3,6 +3,7 @@ import { useState } from "react";
 import Messages from "../../components/Messages";
 import SendMessage from "../../components/SendMessage";
 import Layout from "../../layout/Layout";
+import { askOpenAI } from "../../services/askOpenAI";
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
@@ -12,7 +13,7 @@ const Chat = () => {
     setMessages((prevMessages) => [...prevMessages, { text, sender }]);
   };
 
-  const sendMessage = () => {
+  const sendMessage = async () => {
     const userMessage = {
       username: "User",
       message: message,
@@ -20,7 +21,7 @@ const Chat = () => {
 
     const loadingMessage = {
       username: "NewLife",
-      message: "",
+      message: "AI is thinking",
       isLoading: true,
     };
 
@@ -31,8 +32,8 @@ const Chat = () => {
     ]);
 
     // API CALL
-    // const aiMessage = await askGrowAI(message);
-    const newLifeAIMessage = "Hello Buddy";
+    const response = await askOpenAI(message);
+    const newLifeAIMessage = response;
     const aiMessage = { username: "NewLife", message: newLifeAIMessage };
 
     setMessages((currentMessages) => {
