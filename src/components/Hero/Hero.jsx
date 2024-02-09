@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
         <div className="ratio ratio-16x9 aspect-video w-full flex justify-center items-start">
           <iframe
-            src="https://www.youtube.com/embed/xNRJwmlRBNU?si=TpoAkG9sE2Gk77Ta"
+            src="https://www.youtube.com/embed/Z6qsvKS4Q10?si=sYP7Y8SxTEsJ4_gZ"
             title="YouTube video"
             allowfullscreen
             className="rounded-3xl w-4/5 h-[57vh]"
