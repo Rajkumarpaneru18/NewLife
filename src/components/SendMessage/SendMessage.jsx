@@ -2,14 +2,26 @@ import { IoSend } from "react-icons/io5";
 import PropTypes from "prop-types";
 
 const SendMessage = ({ message, sendMessage, setMessage }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendMessage();
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleSubmit(e);
+    }
+  };
   return (
     <div className="flex justify-between items-center px-4 py-3  border-t border-gray-600 bg-transparent min-h-[10vh]">
-      <form className="flex-grow mx-4">
+      <form className="flex-grow mx-4" onSubmit={handleSubmit}>
         <input
           className="w-full p-3 text-base text-white placeholder-gray-500 bg-gray-700 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:border-transparent resize-none"
           placeholder="Type your message here..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          onKeyDown={handleKeyDown}
         />
       </form>
       <button
