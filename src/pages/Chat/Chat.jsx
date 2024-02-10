@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import Messages from "../../components/Messages";
 import SendMessage from "../../components/SendMessage";
@@ -8,6 +8,10 @@ import { askOpenAI } from "../../services/askOpenAI";
 const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState();
+  const messagesEndRef = useRef(null);
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
 
   const addMessage = (text, sender) => {
     setMessages((prevMessages) => [...prevMessages, { text, sender }]);
@@ -54,8 +58,11 @@ const Chat = () => {
   return (
     <>
       <Layout>
-        <div className="w-[60vw] max-w-[80vw] ">
-          <Messages messages={messages} />
+        <div className="w-[60vw] max-w-[80vw] flex flex-col ">
+          <div className="flex-grow flex flex-col overflow-y-auto">
+            <Messages messages={messages} />
+            <div ref={messagesEndRef} />
+          </div>
           <SendMessage
             message={message}
             setMessage={setMessage}
