@@ -5,6 +5,7 @@ const SendMessage = ({ message, sendMessage, setMessage }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     sendMessage();
+    sendMessage("");
   };
 
   const handleKeyDown = (e) => {
