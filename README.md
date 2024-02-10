@@ -52,12 +52,11 @@
 - Emergency Assistance
 
 ## Demo
-[Watch Demo Video](https://drive.google.com/file/d/1SUnjodcYvMxtLGDYkzFQ9vDm6e6mBBQq/view?usp=sharing)
-
+https://github.com/SusheelThapa/Quine-ZeroSpoil/assets/83917129/a0a1f16e-fb04-4430-bcdc-e72ab966c4b6
 
 ### Installation
 
-1.Clone the repository
+1. Clone the repository
  
    ```bash
    https://github.com/Rajkumarpaneru18/NewLife.git
@@ -74,7 +73,7 @@
    ```bash
    yarn run dev
    ```
-4. Add .env file to your root repository and copy this content "REACT_APP_OPENAI_KEY=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" inside to your .env file.
+4. Add .env file to your root repository and add this content "REACT_APP_OPENAI_KEY= Your_API_KEY" inside to your .env file.
    
 ### Usage
 - **Information Resource:** Provides expectant mothers with accurate and helpful information about pregnancy, prenatal care, childbirth, and postnatal care.
