@@ -35,6 +35,7 @@
 
 ## Table of Contents
 
+- [Problem Statement](#problem_statement)
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
@@ -44,6 +45,15 @@
 - [License](#license)
 
 
+
+## Problem Statement
+The maternal mortality rate (MMR) in Nepal poses a significant public health challenge, with considerable regional disparities. At 151 per 100,000 live births, the MMR is particularly elevated in Lumbini and Karnali provinces  In Nepal, many women suffer from preventable pregnancy-related complications and deaths due to gaps in knowledge and timely information access. Traditional practices, limited access to qualified healthcare professionals, and social stigmas can leave women unaware of critical health risks and appropriate care during pregnancy and childbirth. This results in high maternal mortality rates, particularly in rural areas and marginalized communities.
+<div style="text-align: center;">
+    <img src="https://publichealthupdate.com/wp-content/uploads/2023/03/20-791x1024.jpg" alt="public data of MRR" style="display: block; margin: 0 auto;"/>
+     <p style="font-weight: bold;">Source: <a href="https://publichealthupdate.com/national-population-and-housing-census-2021-a-report-on-maternal-mortality"></a>https://publichealthupdate.com/national-population-and-housing-census-2021-a-report-on-maternal-mortality</p>
+</div>
+
+ 
 ## Features
  
 - Personalized Assistance
